@@ -1,6 +1,8 @@
 import React from "react";
 import NavBar from "./NavBar";
 import Header from "./Header";
+import { BiPlus } from "react-icons/bi";
+import {FaThLarge} from "react-icons/fa"
 
 const MainLayout = ({ children }) => {
   return (
@@ -14,7 +16,9 @@ const MainLayout = ({ children }) => {
           {/* Page content here */}
           <Header />
 
-          <div className="p-6"><main>{children}</main></div>
+          <div className="p-6">
+            <main>{children}</main>
+          </div>
           <label
             htmlFor="my-drawer-2"
             className="btn btn-primary drawer-button lg:hidden"
@@ -22,15 +26,75 @@ const MainLayout = ({ children }) => {
             Open drawer
           </label>
         </div>
-        <div className="drawer-side bg-black">
+        <div className="drawer-side bg-slate-950">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
           <ul className="menu p-4 w-80 h-full  text-white">
             {/* Sidebar content here */}
             <li>
-              <a>Sidebar Item 1</a>
+            
+              <div className="flex text-xl font-bold">
+              <BiPlus />
+              <p>New Item</p>
+              </div>
             </li>
             <li>
-              <a>Sidebar Item 2</a>
+
+
+              <div className="collapse collapse-arrow bg-slate-950 text-white">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div className="collapse-title text-xl font-bold flex items-center">
+                <FaThLarge />
+                 <p className="pl-3"> Dashboard</p>
+                </div>
+                <div className="collapse-content text-xl font-bold">
+                  <p>Commerce</p>
+                  <p>Analytics</p>
+                  <p>Crypto</p>
+                  <p>Helpdesk</p>
+                  <p>Monitoring</p>
+                  <p>Fitness</p>
+                </div>
+              </div>
+              <div className="collapse collapse-arrow bg-slate-950 text-white">
+                <input type="radio" name="my-accordion-2" />
+
+                
+                <div className="collapse-title text-xl font-bold flex items-center">
+                <FaThLarge />
+                <p className="pl-3"> Applications</p>
+                </div>
+               </div>
+              <div className="collapse collapse-arrow bg-slate-950 text-white">
+                <input type="radio" name="my-accordion-2" />
+
+                
+                <div className="collapse-title text-xl font-bold flex items-center">
+                <FaThLarge />
+                <p className="pl-3"> Elements</p>
+                </div>
+               </div>
+              <div className="collapse collapse-arrow bg-slate-950 text-white">
+                <input type="radio" name="my-accordion-2" />
+
+                
+                <div className="collapse-title text-xl font-bold flex items-center">
+                <FaThLarge />
+                <p className="pl-3"> Datagrid</p>
+                </div>
+               </div>
+              <div className="collapse collapse-arrow bg-slate-950 text-white">
+                <input type="radio" name="my-accordion-2" />
+
+                
+                <div className="collapse-title text-xl font-bold flex items-center">
+                <FaThLarge />
+                <p className="pl-3"> Settings</p>
+                </div>
+               </div>
+
+
+
+
             </li>
           </ul>
         </div>
