@@ -4,7 +4,7 @@ import Header from "./Header";
 
 const MainLayout = ({ children }) => {
   return (
-    <div>
+    <div className="bg-base-200">
       <NavBar />
 
       <div className="drawer lg:drawer-open">
@@ -22,9 +22,9 @@ const MainLayout = ({ children }) => {
             Open drawer
           </label>
         </div>
-        <div className="drawer-side">
+        <div className="drawer-side bg-black">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-          <ul className="menu p-4 w-80 h-full bg-base-200 text-base-content">
+          <ul className="menu p-4 w-80 h-full  text-white">
             {/* Sidebar content here */}
             <li>
               <a>Sidebar Item 1</a>
