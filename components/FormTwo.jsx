@@ -2,119 +2,152 @@ import React from "react";
 
 const FormTwo = () => {
   return (
-    <div className="bg-zinc-50 mt-44">
+    <div className=" mt-6">
       <div className="lg:flex">
-        <div className="w-2/3 mr-16">
+        {/* first form */}
+
+        <div className="w-2/3 mr-16 bg-white rounded-lg">
           {" "}
-          <form>
-            <div className="">
-              {/* 1 */}
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Title</span>
-                </label>
-                <input name="" type="text" className="input input-bordered " />
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Title</span>
-                </label>
-                <select
-                  id="cars"
-                  name="sub_category"
-                  className="input input-bordered "
-                >
-                  <option value="car">1</option>
-                  <option value="racing_car">2</option>
-                  <option value="jeep">3</option>
-                  <option value="truck">4</option>
-                </select>
-              </div>
+          <div className="p-6">
+            <h2 className="font-bold text-xl">Form title</h2>
+            <p className="pb-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus id
+              soluta exercitationem quaerat?
+            </p>
 
-              {/* line 2 */}
-
-              {/* line 3 */}
-              <div className="grid lg:grid-cols-2 gap-6">
+            <form>
+              <div className="">
+                {/* 1 */}
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Title</span>
+                    <span className="label-text">Label title</span>
                   </label>
                   <input
                     name=""
                     type="text"
                     className="input input-bordered "
+                    placeholder="Placeholder content"
                   />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Title</span>
+                    <span className="label-text">Label title</span>
                   </label>
-                  <input
-                    name=""
-                    type="text"
+                  <select
+                    id="cars"
+                    name="sub_category"
                     className="input input-bordered "
-                  />
+                  >
+                    <option value="car">Chose</option>
+                    <option value="racing_car">2</option>
+                    <option value="jeep">3</option>
+                    <option value="truck">4</option>
+                  </select>
+                </div>
+
+                {/* line 2 */}
+
+                {/* line 3 */}
+                <div className="grid lg:grid-cols-2 gap-6">
+                  <div className="form-control">
+                    <label className="label">
+                      <span className="label-text">Label title</span>
+                    </label>
+                    <input
+                      name=""
+                      type="text"
+                      className="input input-bordered "
+                      placeholder="Placeholder content"
+                    />
+                  </div>
+                  <div className="form-control">
+                    <label className="label">
+                      <span className="label-text">Label title</span>
+                    </label>
+                    <input
+                      name=""
+                      type="text"
+                      className="input input-bordered "
+                      placeholder="Placeholder content"
+                    />
+                  </div>
+                </div>
+
+                {/* line 4 */}
+
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Details Description</span>
+                  </label>
+                  <textarea
+                    name="description"
+                    type="text"
+                    className="textarea textarea-bordered"
+                    placeholder="Type here....."
+                  ></textarea>
                 </div>
               </div>
-
-              {/* line 4 */}
-
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Details Description</span>
-                </label>
-                <textarea
-                  name="description"
-                  type="text"
-                  className="textarea textarea-bordered"
-                  placeholder="Type here....."
-                ></textarea>
-              </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
-        <div className=" w-1/3">
-          <form>
-            <div className="">
-              {/* 1 */}
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Title</span>
-                </label>
-                <input name="" type="text" className="input input-bordered " />
-              </div>
+        {/* 
+        second form */}
 
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Title</span>
-                </label>
-                <select
-                  id="cars"
-                  name="sub_category"
-                  className="input input-bordered "
-                >
-                  <option value="car">1</option>
-                  <option value="racing_car">2</option>
-                  <option value="jeep">3</option>
-                  <option value="truck">4</option>
-                </select>
-              </div>
+        <div className=" w-1/3 bg-white">
+          <div className="p-6">
+            <h2 className="font-bold text-xl">Form title</h2>
 
-              {/* line 4 */}
+            <form>
+              <div className="">
+                {/* 1 */}
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Label title</span>
+                  </label>
+                  <input
+                    name=""
+                    type="text"
+                    className="input input-bordered "
+                    placeholder="Placeholder content"
+                  />
+                </div>
 
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Details Description</span>
-                </label>
-                <textarea
-                  name="description"
-                  type="text"
-                  className="textarea textarea-bordered"
-                  placeholder="Type here....."
-                ></textarea>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Label title</span>
+                  </label>
+                  <select
+                    id="cars"
+                    name="sub_category"
+                    className="input input-bordered "
+                  >
+                    <option value="car">Chose</option>
+                    <option value="racing_car">2</option>
+                    <option value="jeep">3</option>
+                    <option value="truck">4</option>
+                  </select>
+                </div>
+
+                {/* line 4 */}
+
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Details Description</span>
+                  </label>
+                  <textarea
+                    name="description"
+                    type="text"
+                    className="textarea textarea-bordered"
+                    placeholder="Type here....."
+                  ></textarea>
+
+                  <button className="btn btn-active btn-primary mt-6">
+                    Primary
+                  </button>
+                </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>

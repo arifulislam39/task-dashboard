@@ -16,23 +16,23 @@ const FormOne = () => {
             {/* 1 */}
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Title</span>
+                <span className="label-text">Label title</span>
               </label>
-              <input name="" type="text" className="input input-bordered " />
+              <input name="" type="text" className="input input-bordered" placeholder="Placeholder content" />
             </div>
 
             {/* line 2 */}
             <div className="grid lg:grid-cols-3 gap-6">
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Title</span>
+                  <span className="label-text">Label title</span>
                 </label>
                 <select
                   id="cars"
                   name="sub_category"
                   className="input input-bordered "
                 >
-                  <option value="car">1</option>
+                  <option value="car">Chose</option>
                   <option value="racing_car">2</option>
                   <option value="jeep">3</option>
                   <option value="truck">4</option>
@@ -40,15 +40,15 @@ const FormOne = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Title</span>
+                  <span className="label-text">Label title</span>
                 </label>
-                <input name="" type="text" className="input input-bordered " />
+                <input name="" type="text" className="input input-bordered " placeholder="Placeholder content" />
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Title</span>
+                  <span className="label-text">Label title</span>
                 </label>
-                <input name="" type="text" className="input input-bordered " />
+                <input name="" type="text" className="input input-bordered " placeholder="Placeholder content"  />
               </div>
             </div>
 
@@ -56,15 +56,15 @@ const FormOne = () => {
             <div className="grid lg:grid-cols-2 gap-6">
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Title</span>
+                  <span className="label-text">Label title</span>
                 </label>
-                <input name="" type="text" className="input input-bordered " />
+                <input name="" type="text" className="input input-bordered " placeholder="Placeholder content" />
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Title</span>
+                  <span className="label-text">Label title</span>
                 </label>
-                <input name="" type="text" className="input input-bordered " />
+                <input name="" type="text" className="input input-bordered " placeholder="Placeholder content" />
               </div>
             </div>
 
