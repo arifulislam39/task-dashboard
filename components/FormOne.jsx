@@ -2,8 +2,15 @@ import React from "react";
 
 const FormOne = () => {
   return (
-    <div>
-      <div>
+    <div className="bg-white rounded-lg">
+      <div className="p-6">
+      <h2 className="font-bold text-xl">Form title</h2>
+        <p className="pb-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus id
+          soluta exercitationem quaerat?
+        </p>
+       <div> <button className="btn btn-warning mr-3">Turkish</button>
+        <button className="btn ">English</button></div>
         <form>
           <div className="">
             {/* 1 */}

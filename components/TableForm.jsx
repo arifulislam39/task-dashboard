@@ -1,17 +1,18 @@
 import React from "react";
+import {BiSave} from "react-icons/bi"
 
 const TableForm = () => {
   return (
-    <div className="mt-20">
-      <div>
-        <h2>Table Form</h2>
-        <p>
+    <div className=" bg-white rounded-lg my-6">
+      <div className="p-6">
+        <h2 className="font-bold text-xl">Form title</h2>
+        <p className="pb-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus id
           soluta exercitationem quaerat?
         </p>
 
         {/* alert */}
-        <div className="alert alert-error bg-red-200">
+        <div className="alert alert-error bg-red-200 mb-6">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="stroke-current shrink-0 h-6 w-6"
@@ -30,54 +31,124 @@ const TableForm = () => {
 
         {/* table */}
 
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto border rounded-xl ">
           <table className="table table-zebra">
             {/* head */}
             <thead>
               <tr>
-                <th></th>
-                <th>Name</th>
-                <th>Job</th>
-                <th>Favorite Color</th>
+                <th className="font-bold">Table title</th>
+                <th className="font-bold">Table title</th>
+                <th className="font-bold">Table title</th>
+                <th className="font-bold">Table title</th>
               </tr>
             </thead>
             <tbody>
               {/* row 1 */}
               <tr>
-                <th>1</th>
-                <td>Cy Ganderton</td>
+                <td className="">Cy Ganderton</td>
                 <td>Quality Control Specialist</td>
                 <td>Blue</td>
+                <td>
+                  <div>
+                    <button className="btn btn-sm btn-primary mr-3"><BiSave /> Edit</button>
+                    <button className="btn btn-sm btn-warning"><BiSave />Delete</button>
+                  </div>
+                </td>
               </tr>
-              {/* row 2 */}
               <tr>
-                <th>2</th>
-                <td>Hart Hagerty</td>
-                <td>Desktop Support Technician</td>
-                <td>Purple</td>
+                <td className="">Cy Ganderton</td>
+                <td>Quality Control Specialist</td>
+                <td>Blue</td>
+                <td>
+                  <div>
+                    <button className="btn btn-sm btn-primary mr-3"><BiSave /> Edit</button>
+                    <button className="btn btn-sm btn-warning"><BiSave />Delete</button>
+                  </div>
+                </td>
               </tr>
-              {/* row 3 */}
               <tr>
-                <th>3</th>
-                <td>Brice Swyre</td>
-                <td>Tax Accountant</td>
-                <td>Red</td>
+                <td className="">Cy Ganderton</td>
+                <td>Quality Control Specialist</td>
+                <td>Blue</td>
+                <td>
+                  <div>
+                    <button className="btn btn-sm btn-primary mr-3"><BiSave /> Edit</button>
+                    <button className="btn btn-sm btn-warning"><BiSave />Delete</button>
+                  </div>
+                </td>
               </tr>
+              <tr>
+                <td className="">Cy Ganderton</td>
+                <td>Quality Control Specialist</td>
+                <td>Blue</td>
+                <td>
+                  <div>
+                    <button className="btn btn-sm btn-primary mr-3"><BiSave /> Edit</button>
+                    <button className="btn btn-sm btn-warning"><BiSave />Delete</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td className="">Cy Ganderton</td>
+                <td>Quality Control Specialist</td>
+                <td>Blue</td>
+                <td>
+                  <div>
+                    <button className="btn btn-sm btn-primary mr-3"><BiSave /> Edit</button>
+                    <button className="btn btn-sm btn-warning"><BiSave />Delete</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td className="">Cy Ganderton</td>
+                <td>Quality Control Specialist</td>
+                <td>Blue</td>
+                <td>
+                  <div>
+                    <button className="btn btn-sm btn-primary mr-3"><BiSave /> Edit</button>
+                    <button className="btn btn-sm btn-warning"><BiSave />Delete</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td className="">Cy Ganderton</td>
+                <td>Quality Control Specialist</td>
+                <td>Blue</td>
+                <td>
+                  <div>
+                    <button className="btn btn-sm btn-primary mr-3"><BiSave /> Edit</button>
+                    <button className="btn btn-sm btn-warning"><BiSave />Delete</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td className="">Cy Ganderton</td>
+                <td>Quality Control Specialist</td>
+                <td>Blue</td>
+                <td>
+                  <div>
+                    <button className="btn btn-sm btn-primary mr-3"><BiSave /> Edit</button>
+                    <button className="btn btn-sm btn-warning"><BiSave />Delete</button>
+                  </div>
+                </td>
+              </tr>
+            
+
             </tbody>
           </table>
         </div>
 
         {/* pagination */}
-       <div className="text-center">
-       <div className="join">
-        <button className="join-item btn">«</button>
-          <button className="join-item btn">1</button>
-          <button className="join-item btn">2</button>
-          <button className="join-item btn">3</button>
-          <button className="join-item btn">4</button>
-          <button className="join-item btn">»</button>
+        <div className="text-center mt-6">
+          <div className="join">
+            <button className="join-item btn ">«</button>
+            <button className="join-item btn mx-3">1</button>
+            <button className="join-item btn text-white bg-blue-500">2</button>
+            <button className="join-item btn mx-3">3</button>
+            <button className="join-item btn">4</button>
+            <button className="join-item btn mx-3">»</button>
+          </div>
         </div>
-       </div>
       </div>
     </div>
   );
