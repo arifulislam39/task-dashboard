@@ -4,7 +4,7 @@ import { BiPlus } from "react-icons/bi";
 
 const Header = () => {
   return (
-    <div className="bg-red-300 mt-0">
+    <div className="bg-white mt-0 px-6">
       <div className="navbar bg-base-100">
         <div className="flex-1">
 
